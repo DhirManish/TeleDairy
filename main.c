@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "telecore.h"
 
 /*
  * 
@@ -19,6 +20,8 @@ int main(int argc, char** argv)
 #elif defined(__WIN32__) || defined(__WIN64__)
     system("cls");
 #endif
+
+    display_menu();
 
     return (EXIT_SUCCESS);
 }
