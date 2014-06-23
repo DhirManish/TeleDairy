@@ -10,6 +10,6 @@
 
 int display_menu()
 {
-    printf("%40s\n", "MENU");
-    printf("%40s\n", "====");
+    printf("\t\t\t%s\n", "MENU");
+    printf("\t\t\t%s\n", "====");
 }
