@@ -14,13 +14,7 @@
  */
 int main(int argc, char** argv)
 {
-/* Check for OS and execute "clear screen" accordingly */
-#if defined(__linux__)
-    system("clear");
-#elif defined(__WIN32__) || defined(__WIN64__)
-    system("cls");
-#endif
-
+    clrscr();
     display_menu();
 
     return (EXIT_SUCCESS);
