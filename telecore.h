@@ -12,6 +12,7 @@
 extern "C" {
 #endif
 
+void clrscr(void);    
 int display_menu(void);
 int getche(void);
 
