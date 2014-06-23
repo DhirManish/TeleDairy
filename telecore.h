@@ -12,7 +12,8 @@
 extern "C" {
 #endif
 
-int display_menu();
+int display_menu(void);
+int getche(void);
 
 #ifdef	__cplusplus
 }
