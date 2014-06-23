@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-void display_menu();
+int display_menu();
 
 #ifdef	__cplusplus
 }
