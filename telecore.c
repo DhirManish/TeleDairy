@@ -10,6 +10,16 @@
 #include <unistd.h>
 #include "telecore.h"
 
+/* Check for OS and execute "clear screen" accordingly */
+void clrscr(void)
+{
+#if defined(__linux__)
+    system("clear");
+#elif defined(__WIN32__) || defined(__WIN64__)
+    system("cls");
+#endif
+}
+
 /* reads from keypress, echoes */
 int getche(void)
 {
